@@ -1,0 +1,331 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Mono:wght@700&family=Ubuntu:wght@300&display=swap');
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Classes funcionais */
+
+.resize {
+    max-width: 1366px;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.opoacity {
+    opacity: 65%;
+}
+
+/* Layout */
+
+header {
+    background-color: #9177F2;
+    padding: 29px 0;
+    min-height: 70px;
+    display: flex;
+    align-items: center; 
+    margin-bottom: 50px;
+}
+
+header img#logo {
+    background: rgba(216, 216, 216, 0.3);
+    margin-right: 20px;
+}
+
+label#name {
+    margin-left: 98px;
+    display: flex;
+    align-items: center;
+}
+
+label#name h1 {
+    display: inline-block;
+}
+
+nav#menubar {
+    position: absolute;
+    right: 0px;
+}
+
+nav#menubar a {
+    margin-right: 98px;
+}
+
+article {
+    padding: 25px;
+    margin-bottom: 60px;
+}
+
+.text-box {
+    max-width: 740px;
+}
+
+div.text-box p, div.text-box-sec p  {
+    margin-top: 15px;
+}
+
+div.text-box  p.first, div.text-box-sec p.first {
+    margin-top: 0px;
+}
+
+section#história, section#segurança, section#ia, section#cloud {
+    padding: 25px;
+    margin-top: 15px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+div.text-box-sec {
+    max-width: 670px;
+}
+
+a.btn{
+    display: inline-block;
+    text-align: center;
+    max-width: 220px;
+    padding: 19px 50px;
+    border-radius: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+#história .resize, #segurança .resize, #ia .resize, #cloud .resize {
+    display: flex;
+}
+
+img.img-right {
+    height: 270px;
+    margin-left: 300px;
+    align-self: center;
+}
+
+/* Formatações Gerais */
+
+body {
+    background: #F4F4F4;
+}
+
+header label#name h1 {
+    font-family: "Raleway";
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+header nav#menubar a {
+    font: normal 400 1.5em "Ubuntu", Arial, Helvetica, sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+main h1, main h2 {
+    font: normal 700 2em "Roboto Mono";
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+main h1 {
+    text-align: justify;
+}
+
+main h2 {
+    font-size: 1.875em;
+}
+
+main .topic::before {
+    content: '// '
+}
+
+main h1.to-tag::before {
+    content: '<';
+    margin: 5px;
+}
+
+main h1.to-tag::after {
+    content: '/>';
+    margin: 5px;
+}
+
+main p {
+    font: normal 300 1.3em "Ubuntu";
+    text-align: justify;
+    line-height: 1.5em;
+    text-shadow: 0 0 2px hsla(0, 0%, 0%, 0.25);
+    color: #363636;
+}
+
+a.btn, a.btn:visited {
+    color: black;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.251);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21.2174px;
+    line-height: 24px;
+    letter-spacing: 0.085em;
+}
+
+
+/* Background */
+
+
+article {
+    background: url(img/background.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+section#história {
+    background: #9DB3FF;
+}
+
+section#segurança {
+    background: transparent;
+}
+
+section#ia {
+    background: #9AD0FF;
+}
+
+/* Animações */
+
+nav#menubar a {
+    transition: 0.5s;
+}
+
+nav#menubar a:hover {
+    transition: 0.4s;
+    font-size: 1.75em;
+    text-decoration: underline;
+}
+
+h1.typing {
+    display: inline-block;
+    border-right: 2px solid rgba(0, 0, 0, 0.808);
+    white-space: pre;
+    overflow: hidden;
+}
+
+.typing {
+    animation: blinkCursor 585ms steps(90) infinite normal, typing 4s steps(90) .2s normal both;
+}
+
+.reduct-type {
+    animation: blinkCursor 585ms steps(90) infinite normal, reduct-type 1.9s steps(40) .4s normal both;
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(0, 0, 0, 0.699);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 120%;
+    }
+}
+
+@keyframes reduct-type {
+    from {
+        width: 0;
+    }
+    to {
+        width: 32%;
+    }
+}
+
+a.btn, a.btn:hover{
+    transition: .5s;
+}
+a.btn:hover {
+    margin-top: 50px;
+    border: 1px solid rgba(82, 82, 82, 0.185);
+    background: rgba(255, 255, 255, 0.459);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+}
+
+a.btn:active {
+    font-size: 1em;
+    padding: 16.466666667px 43.333333333px;
+    transition: .1s;
+}
+
+/* Portatibilidade */
+
+@media (max-width: 1500px) {
+    article {
+        background: none;
+    }
+    h1.typing {
+        animation: none;
+        border: none;
+        display: block;
+        white-space: normal;
+    }
+
+    div.text-box, div.resize, div.text-box-sec {
+        margin: auto;
+        padding: 0;
+    }
+
+    div.text-box-sec {
+        max-width: 740px;
+    }
+
+    img.img-right {
+        display: none;
+    }
+}
+
+@media (max-width: 1080px) {
+    img#logo {
+        display: none;
+    }
+}
+
+@media (max-width: 1028px) {
+    nav, img#logo {
+        display: none;
+    }
+}
+
+@media (max-width: 925px) {
+    
+    main {
+        font-size: 14px;
+    }
+
+    label#name {
+        margin-left: 50px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    label#name {
+        margin-left: 25px;
+    }
+}
