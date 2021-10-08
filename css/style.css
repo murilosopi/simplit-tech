@@ -67,6 +67,10 @@ article {
     margin-bottom: 60px;
 }
 
+article ul {
+    padding-left: 45px;
+}
+
 .text-box {
     max-width: 740px;
 }
@@ -158,13 +162,17 @@ main h1.to-tag::after {
     margin: 5px;
 }
 
-main p {
+main p, article ul {
     font: normal 300 1.3em "Ubuntu";
     text-align: justify;
     line-height: 1.5em;
     text-shadow: 0 0 2px hsla(0, 0%, 0%, 0.25);
     color: #363636;
     text-indent: 1em;
+}
+
+article ul {
+    margin-top: 10px;
 }
 
 a.btn, a.btn:visited {
