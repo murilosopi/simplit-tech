@@ -1,0 +1,40 @@
+/* Formatting Style */
+
+.btn {
+    color: black;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.251);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.085em;
+}
+
+
+/* Layout */
+
+.btn{
+    display: inline-block;
+    max-width: 220px;
+    padding: 19px 50px;
+    border-radius: 26px;
+    margin-top: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: .5s;
+}
+
+
+/* Pseudo-Classes Style */
+
+.btn:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.459);
+}
+
+.btn:active {
+    transform: scale(0.8);
+}
