@@ -281,5 +281,8 @@ article {
 }
 
 @media (max-width: 650px) {
-
+    .header {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
