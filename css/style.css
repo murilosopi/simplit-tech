@@ -30,7 +30,7 @@ p {
 
 .header {
     background-color: #9177F2;
-    padding: 29px 0;
+    padding: 29px 98px;
     min-height: 70px;
     display: flex;
     align-items: center;
@@ -42,7 +42,6 @@ p {
 }
 
 #name {
-    margin-left: 98px;
     display: flex;
     align-items: center;
 }
@@ -53,6 +52,14 @@ p {
 
 .menubar a {
     margin-right: 98px;
+}
+
+.menubar a:last-child {
+    margin: 0;
+}
+
+#checkbox-menu, #hamburger, .line {
+    display: none;
 }
 
 article {
@@ -215,19 +222,64 @@ article {
     .menubar {
         display: none;
     }
+
+    #checkbox-menu {
+        position: absolute;
+        opacity: 0;
+    }
+    
+    #hamburger {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        height: 18px;
+        width: 30px;
+    }
+    
+    #hamburger .line {
+        height: 2px;
+        width: 100%;
+        background-color: black;
+        display: block;
+        position: absolute;
+        border-radius: 1em;
+        transition: 0.25s;
+    }
+    
+    #hamburger .line:nth-child(1) {
+        top: 0;
+    }
+    
+    #hamburger .line:nth-child(2) {
+        top: 8px;
+    }
+    
+    #hamburger .line:nth-child(3) {
+        top: 16px;
+    }
+    
+    #checkbox-menu:checked + #hamburger .line:nth-child(1) {
+        transform: rotate(135deg);
+        top: 8px;
+    }
+    
+    #checkbox-menu:checked + #hamburger .line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    #checkbox-menu:checked + #hamburger .line:nth-child(3) {
+        transform: rotate(-135deg);
+        top: 8px;
+    }
+    
 }
 
 @media (max-width: 925px) {
     main {
         font-size: 14px;
     }
-    #name {
-        margin-left: 50px;
-    }
 }
 
 @media (max-width: 650px) {
-    #name {
-        margin-left: 25px;
-    }
+
 }
