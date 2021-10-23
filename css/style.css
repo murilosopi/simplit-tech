@@ -30,7 +30,7 @@ p {
 
 .header {
     background-color: #9177F2;
-    padding: 29px 98px;
+    padding: 30px 98px;
     min-height: 70px;
     display: flex;
     align-items: center;
@@ -58,7 +58,57 @@ p {
     margin: 0;
 }
 
-#checkbox-menu, #hamburger, .line {
+#checkbox-menu {
+    position: absolute;
+    opacity: 0;
+}
+
+#hamburger {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 18px;
+    width: 30px;
+}
+
+#hamburger .line {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    position: absolute;
+    border-radius: 1em;
+    transition: 0.25s;
+}
+
+#hamburger .line:nth-child(1) {
+    top: 0;
+}
+
+#hamburger .line:nth-child(2) {
+    top: 8px;
+}
+
+#hamburger .line:nth-child(3) {
+    top: 16px;
+}
+
+#checkbox-menu:checked + #hamburger .line:nth-child(1) {
+    transform: rotate(135deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked + #hamburger .line:nth-child(2) {
+    opacity: 0;
+}
+
+#checkbox-menu:checked + #hamburger .line:nth-child(3) {
+    transform: rotate(-135deg);
+    top: 8px;
+}
+
+
+#checkbox-menu, #hamburger {
     display: none;
 }
 
@@ -118,6 +168,10 @@ body {
     font-family: "Raleway";
     font-size: 1.5em;
     font-weight: 500;
+}
+
+.menubar {
+    display: flex;
 }
 
 .menubar a {
@@ -192,7 +246,57 @@ article {
     text-decoration: underline;
 }
 
-/* Portatibilidade */
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+@-webkit-keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+@-moz-keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+@-webkit-keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+@-o-keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+/* Responsividade */
 
 @media (max-width: 1500px) {
     article {
@@ -219,59 +323,30 @@ article {
 }
 
 @media (max-width: 1028px) {
-    .menubar {
-        display: none;
+    #checkbox-menu, #hamburger {
+        display: block;
     }
 
-    #checkbox-menu {
+    .menubar a {
+        margin: 0px;
+    }
+    
+    .menubar {
         position: absolute;
-        opacity: 0;
+        top: -100%;
+        right: 0;
+        height: 50vh;
+        width: 100vw;
+        background: rgba(154, 129, 243, 0.986);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
     }
-    
-    #hamburger {
-        cursor: pointer;
-        position: relative;
-        display: block;
-        height: 18px;
-        width: 30px;
+
+    #checkbox-menu:checked ~ .menubar {
+        top: 130px;
+        animation: opacity .2s;
     }
-    
-    #hamburger .line {
-        height: 2px;
-        width: 100%;
-        background-color: black;
-        display: block;
-        position: absolute;
-        border-radius: 1em;
-        transition: 0.25s;
-    }
-    
-    #hamburger .line:nth-child(1) {
-        top: 0;
-    }
-    
-    #hamburger .line:nth-child(2) {
-        top: 8px;
-    }
-    
-    #hamburger .line:nth-child(3) {
-        top: 16px;
-    }
-    
-    #checkbox-menu:checked + #hamburger .line:nth-child(1) {
-        transform: rotate(135deg);
-        top: 8px;
-    }
-    
-    #checkbox-menu:checked + #hamburger .line:nth-child(2) {
-        opacity: 0;
-    }
-    
-    #checkbox-menu:checked + #hamburger .line:nth-child(3) {
-        transform: rotate(-135deg);
-        top: 8px;
-    }
-    
 }
 
 @media (max-width: 925px) {
@@ -282,7 +357,7 @@ article {
 
 @media (max-width: 650px) {
     .header {
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 35px;
+        padding-right: 35px;
     }
 }
