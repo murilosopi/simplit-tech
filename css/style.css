@@ -335,7 +335,7 @@ article {
         position: absolute;
         top: -100%;
         right: 0;
-        height: 50vh;
+        height: 65vh;
         width: 100vw;
         background: rgba(154, 129, 243, 0.986);
         flex-direction: column;
