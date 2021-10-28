@@ -129,25 +129,20 @@ article ul {
     margin-top: 15px;
 }
 
-.text-box p.first,
-.text-box-sec p.first {
-    margin-top: 0px;
-}
-
 .topic {
     padding: 25px;
 }
 
 .colored-bg:nth-child(2) {
-    background-color: #9AD0FF;
+    background-color: #9DB3FF;
 }
 
 .colored-bg:nth-child(4) {
-    background-color: #9ad0ff7c;
+    background-color: #99e4e4;
 }
 
 .colored-bg:nth-child(6) {
-    background-color: #c3e3ff8a;
+    background-color: #9AD0FF;
 }
 
 .text-box-sec {
