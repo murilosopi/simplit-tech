@@ -59,8 +59,9 @@ p {
 }
 
 #checkbox-menu {
+    position: absolute;
     opacity: 0;
-    transform: translateX(100vw);
+    right: 0;
 }
 
 #hamburger {
