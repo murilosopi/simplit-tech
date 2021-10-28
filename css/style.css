@@ -138,8 +138,16 @@ article ul {
     padding: 25px;
 }
 
-.colored-bg {
+.colored-bg:nth-child(2) {
     background-color: #9AD0FF;
+}
+
+.colored-bg:nth-child(4) {
+    background-color: #9ad0ff7c;
+}
+
+.colored-bg:nth-child(6) {
+    background-color: #c3e3ff8a;
 }
 
 .text-box-sec {
@@ -208,7 +216,7 @@ body {
 
 .to-tag::after {
     content: '/>';
-    margin: 5px;
+    margin: 1px;
 }
 
 main p,
@@ -296,6 +304,36 @@ article {
     }
 }
 
+#cursor {
+    border-right: 3px solid;
+    margin-left: 3px;
+    animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@-o-keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+  
+@-webkit-keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+  
+@-moz-keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+  
 /* Responsividade */
 
 @media (max-width: 1500px) {
