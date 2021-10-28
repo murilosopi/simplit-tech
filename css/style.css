@@ -61,6 +61,7 @@ p {
 #checkbox-menu {
     position: absolute;
     opacity: 0;
+    right: 0;
 }
 
 #hamburger {
