@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded',function(event){
+    if (document.title=="Home"){
     var dataText = [ "Conheça: Cloud Computing"];
-    
+    } else if (document.title=="Quem Somos") {
+      var dataText = [ "Quem Somos"];
+    }
+
     function typeWriter(text, i, fnCallback) {
       if (i < (text.length)) {
        document.querySelector(".typedtext").innerHTML = text.substring(0, i+1) +'<span id="cursor" aria-hidden="true"></span>';
