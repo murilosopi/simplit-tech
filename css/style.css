@@ -2,18 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Mono:wght@700&family=Ubuntu:wght@300&display=swap');
 
 /* Reset */
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    font: normal 400 16px "Ubuntu", Arial, Helvetica, sans-serif;
-}
-
-p {
-    text-align: justify;
-}
-
+ 
 /* Classes funcionais */
 
 .resize {
@@ -113,7 +102,7 @@ p {
     display: none;
 }
 
-article {
+main {
     padding: 25px;
 }
 
@@ -161,12 +150,25 @@ article ul {
     align-self: center;
 }
 
+.member-box {
+    padding: 45px;
+    margin-top: 65px;
+    background-color: #EBEBEB;
+    border-radius: 180px;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.member-photo {
+    display: inline-block;
+    width: 270px;
+    height: 270px;
+    background-color: #3E3E3E;
+    border-radius: 50%;
+}
 
 /* Formatações Gerais */
-
-body {
-    background: #F4F4F4;
-}
 
 #name h1 {
     font-family: "Raleway";
@@ -201,7 +203,7 @@ body {
     margin-top: 30px;
 }
 
-.subtitle::before {
+.inline-comment::before {
     content: '// '
 }
 
