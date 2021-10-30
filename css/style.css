@@ -14,6 +14,11 @@
     text-align: center;
 }
 
+.right-flex {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
 
 /* Layout */
 
@@ -102,7 +107,7 @@
     display: none;
 }
 
-main {
+.padding-text {
     padding: 25px;
 }
 
@@ -159,6 +164,9 @@ article ul {
     align-items: center;
 }
 
+.right-flex .member-box {
+    flex-direction: row-reverse;
+}
 
 .member-photo {
     display: inline-block;
