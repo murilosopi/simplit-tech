@@ -162,10 +162,13 @@ article ul {
     border-radius: 180px;
     display: inline-flex;
     align-items: center;
+    box-shadow: -5px 5px 4px rgb(0, 0, 0, 25%);
 }
 
 .right-flex .member-box {
     flex-direction: row-reverse;
+    box-shadow: 5px 5px 4px rgb(0, 0, 0, 25%);
+    text-align: right;
 }
 
 .member-photo {
@@ -174,6 +177,37 @@ article ul {
     height: 270px;
     background-color: #3E3E3E;
     border-radius: 50%;
+    margin-right: 45px;
+}
+
+.right-flex .member-photo{
+    margin-right: 0;
+    margin-left: 45px;
+}
+
+.member-box .member-name {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.multiline-comment::before {
+    content: '/* ';
+}
+
+.multiline-comment::after {
+    content: ' */';
+}
+
+.member-name ~ hr {
+    width: 350px;
+    margin-left: 0;
+}
+
+.right-flex .member-name ~ hr {
+    margin-left: auto;
+    margin-right: 0;
 }
 
 /* Formatações Gerais */
