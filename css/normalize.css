@@ -2,14 +2,28 @@ html,
 body {
     margin: 0;
     padding: 0;
-    font: normal 400 16px "Ubuntu", Arial, Helvetica, sans-serif;
-  background: #F4F4F4;
+    font: normal 300 16px "Ubuntu", Arial, Helvetica, sans-serif;
+    background: #F4F4F4;
 }
 
 p {
     text-align: justify;
 }
 
+a, abbr {
+    text-decoration: none;
+}
+
 address {
-  font-style: normal;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+hr {
+    box-sizing: border-box;
+    height: 1px;
+    border-style: solid;
+    border-top: 0;
 }
