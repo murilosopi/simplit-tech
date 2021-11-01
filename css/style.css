@@ -142,6 +142,10 @@
     padding-bottom: 50px;
 }
 
+.members {
+    margin-top: 50px;
+}
+
 .inline-comment::before {
     content: '// '
 }
@@ -293,6 +297,9 @@
     }
 }
 
+.icon:hover {
+    transform: scale(1.25);
+}
 
 /* Responsividade */
 
@@ -302,6 +309,16 @@
     .text-box-sec {
         margin: auto;
         max-width: 740px;
+    }
+
+    .member-box, .right-flex .member-box {
+        box-shadow: -5px 5px 4px rgb(0, 0, 0, 25%);
+    }
+
+    .members, .members .right-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -328,23 +345,17 @@
         top: 130px;
         animation: opacity .2s;
     }
-
 }
 
 @media (max-width: 925px) {
     body {
         font-size: 14px;
     }
-    .members, .members .right-flex {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
     .member-box, .right-flex .member-box {
         flex-direction: column;
         text-align: center;
-        width: 95vw;
+        width: 90vw;
         border-radius: 50px;
         box-shadow: -5px 5px 4px rgb(0, 0, 0, 25%);
     }
@@ -379,15 +390,24 @@
         display: none;
     }
 
-    .member-box, .right-flex .member-photo {
-        transform: scale(90%);
+    .member-box, .right-flex .member-box {
         margin-bottom: 40px;
     }
 
 }
 
 @media (max-width: 375px) {
+
+    .member-box, .right-flex .member-box {
+        width: 90vw;
+    }
+
     .member-photo, .right-flex .member-photo {
-        display: none;
+        width: 220px;
+        height: 220px;
+    }
+
+    .email {
+        transform: scale(90%);
     }
 }
