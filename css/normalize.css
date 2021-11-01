@@ -1,3 +1,6 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Mono:wght@700&family=Ubuntu:wght@300;400&display=swap');
+
 html,
 body {
     margin: 0;
@@ -6,8 +9,13 @@ body {
     background: #F4F4F4;
 }
 
-p {
+p, ul {
     text-align: justify;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    text-shadow: 0 0 2px hsla(0, 0%, 0%, 0.25);
+    color: #363636;
+    text-indent: 1em;
 }
 
 a, abbr {
@@ -26,4 +34,9 @@ hr {
     height: 1px;
     border-style: solid;
     border-top: 0;
+}
+
+article ul {
+    margin-top: 10px;
+    padding-left: 45px;
 }
