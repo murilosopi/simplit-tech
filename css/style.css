@@ -43,6 +43,7 @@
 
 .menubar {
     display: flex;
+    z-index: 1000;
 }
 
 .menubar a {
@@ -153,11 +154,6 @@
 .to-tag::after {
     content: '/>';
     margin: 1px;
-}
-
-.right-flex .member-name~hr {
-    margin-left: auto;
-    margin-right: 0;
 }
 
 .multiline-comment::before {
@@ -339,17 +335,59 @@
     body {
         font-size: 14px;
     }
+    .members, .members .right-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member-box, .right-flex .member-box {
+        flex-direction: column;
+        text-align: center;
+        width: 95vw;
+        border-radius: 50px;
+        box-shadow: -5px 5px 4px rgb(0, 0, 0, 25%);
+    }
+
+    .member-photo, .right-flex .member-photo {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .icon, .right-flex .icon {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
     .header {
         padding-left: 35px;
         padding-right: 35px;
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 425px) {
     .logo {
+        display: none;
+    }
+
+    .member-box, .right-flex .member-photo {
+        transform: scale(90%);
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .member-photo, .right-flex .member-photo {
         display: none;
     }
 }
