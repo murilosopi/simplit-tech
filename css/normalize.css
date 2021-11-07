@@ -9,7 +9,7 @@ body {
     background: #F4F4F4;
 }
 
-p, ul {
+p, ul, ol {
     text-align: justify;
     font-size: 1.3em;
     line-height: 1.5em;
