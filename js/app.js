@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
         var dataText = ["Conheça: Cloud Computing"];
     } else if (document.title == "Quem Somos") {
         var dataText = ["Quem Somos"];
+    } else if (document.title == "O papel da Web") {
+        var dataText = ["O papel da Web"]
     }
 
     function typeWriter(text, i, fnCallback) {
