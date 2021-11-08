@@ -1,0 +1,74 @@
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    .member-box, .right-flex .member-box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
+        width: 90vw;
+        border-radius: 50px;
+        -webkit-box-shadow: -5px 5px 4px rgb(0, 0, 0, 25%);
+                box-shadow: -5px 5px 4px rgb(0, 0, 0, 25%);
+    }
+
+    .member-photo, .right-flex .member-photo {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .social-media {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+
+    .icon, .right-flex .icon {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    .header {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
+@media (max-width: 425px) {
+    .padding-page {
+        padding: 25px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .member-box, .right-flex .member-box {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .member-box, .right-flex .member-box {
+        width: 90vw;
+    }
+
+    .member-photo, .right-flex .member-photo {
+        width: 220px;
+        height: 220px;
+    }
+
+    .email {
+        -webkit-transform: scale(90%);
+            -ms-transform: scale(90%);
+                transform: scale(90%);
+    }
+}
