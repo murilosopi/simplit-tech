@@ -111,21 +111,6 @@
     }
 }
 
-@media (max-width: 425px) {
-    .padding-page {
-        padding: 25px;
-    }
-
-    .logo {
-        display: none;
-    }
-
-    .member-box, .right-flex .member-box {
-        margin-bottom: 40px;
-    }
-
-}
-
 @media (max-width: 480px) {
 
     .member-box, .right-flex .member-box {
@@ -142,4 +127,22 @@
             -ms-transform: scale(90%);
                 transform: scale(90%);
     }
+
+    hr {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 425px) { 
+    .logo {
+        display: none;
+    }
+
+    .member-box, .right-flex .member-box {
+        margin-bottom: 40px;
+    }
+
 }
