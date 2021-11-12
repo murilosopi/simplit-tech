@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
         var dataText = ["Quem Somos"];
     } else if (document.title == "O papel da Web") {
         var dataText = ["O papel da Web"]
+    } else if (document.title == "Segurança na Nuvem") {
+        var dataText = ["Segurança na nuvem"]
     }
 
     function typeWriter(text, i, fnCallback) {
