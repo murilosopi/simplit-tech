@@ -40,6 +40,16 @@ a, abbr {
     text-decoration: none;
 }
 
+article a {
+    color: black;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
 address {
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -56,5 +66,5 @@ hr {
 
 article ul {
     margin-top: 10px;
-    padding-left: 45px;
+    padding-left: 30px;
 }
