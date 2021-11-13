@@ -32,3 +32,16 @@ h4 {
     max-width: 950px;
     margin: auto;
 }
+
+.article-img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.info-extra {
+    background: #9AD0FF;
+    padding: 25px;
+    border-radius: 15px;
+}
+

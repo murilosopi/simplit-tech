@@ -17,8 +17,23 @@ p, ul, ol {
     color: #363636;
 }
 
-h4 {
+h4, summary {
     font-size: 1.6em;
+}
+
+summary {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+}
+
+summary::before {
+    content: "\2192";
+    margin-right: 5px;
+}
+
+summary:hover {
+    text-decoration: underline;
 }
 
 a, abbr {

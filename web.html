@@ -91,7 +91,7 @@
                     Uma curiosidade sobre a internet é o fato de como ela chega até a nossa casa. Por mais estranho que pareça, toda a Internet do mundo está conectada por cabos submarinos! 
                 </p>
                 <p>
-                    É possível ver por onde grandes cabos como esse passam através do <a href="https://www.submarinecablemap.com">Submarine Cable Map</a> e no vídeo documentário da Vox "How does the internet work?", em português, "Como a internet funciona?" abaixo:
+                    É possível ver por onde grandes cabos como esse passam através do <a href="https://www.submarinecablemap.com" target="_blank">Submarine Cable Map</a> e no vídeo documentário da Vox "How does the internet work?", em português, "Como a internet funciona?" abaixo:
                 </p>
                 <div class="iframe-container">
                     <iframe width="1903" height="780" src="https://www.youtube.com/embed/TNQsmPf24go" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%;"></iframe>
@@ -124,10 +124,10 @@
                     Porém, uma página não é carregada sem que haja o contato do cliente com um computador que esteja hospedando, ou seja, armazenando os arquivos que constituem o site, nesse papel, a máquina é chamada de servidor.
                 </p>
                 <p>
-                    Um exemplo de interação cliente-servidor acontece no ato de digitar "www.google.com" na barra de pesquisa do navegador e pressionar enter. Pois o que acontece em seguida é o efeito "pedido-resposta" ou "request-response", como no diagrama simples abaixo:
+                    Um exemplo de interação cliente-servidor acontece no ato de digitar "www.google.com" na barra de pesquisa do navegador e pressionar enter. Pois o que acontece em seguida é o efeito "pedido-resposta" ou "request-response", como na imagem simples abaixo:
                 </p>
 
-                <img src="" alt="Cliente e Servidor">
+                <img src="img/article/client-server.svg" alt="Cliente e Servidor" class="article-img">
 
                 <ol>
                     <li>
@@ -147,21 +147,26 @@
                     Entretanto, ainda temos que conhecer mais sobre o que acontece no meio desse processo de pedido e resposta. 
                 </p>
                 <p>
-                    Começando com uma pergunta: como o cliente acessa o servidor somente com a URL <span class="url">"www.google.com"</span>?
+                    Começando com uma pergunta: como o cliente acessa o servidor somente com a URL <span>"www.google.com"</span>?
                 </p>
                 
                 <h4>Endereço IP e DNS</h4>
                 <p>
-                    Assim como os estabelecimentos físicos com pontos de referências (exemplo: a padaria na rua Joaquim Antunes, número 500), os servidores também possuem uma identificação para que seja possível um cliente chegar até ele, chamada de **endereço IP**, em português, endereço de Protocolo da Internet. O IP é um endereço numérico único que tanto servidores como clientes possuem e é por ele que é feita a conexão para acessar uma página.
+                    Assim como os estabelecimentos físicos com pontos de referências (exemplo: a padaria na rua Joaquim Antunes, número 500), os servidores também possuem uma identificação para que seja possível um cliente chegar até ele, chamada de <strong>endereço IP</strong>, em português, endereço de Protocolo da Internet. O IP é um endereço numérico único que tanto servidores como clientes possuem e é por ele que é feita a conexão para acessar uma página.
                 </p>
-                <img src="" alt="DNS e Endereço IP">
+                <img src="img/article/dns.svg" alt="DNS e Endereço IP" class="article-img">
                 <p>
                     Entretanto, ao digitar a URL do Google, nós não estamos identificando qual é o endereço IP, certo? De certa forma, não, pois o IP na grotesca maioria dos sites que acessamos está mascarado pelo Sistema de Nomes de Domínio, ou como é mais conhecido, DNS. Um servidor de DNS associa o número de IP com o domínio de um site, assim como no nosso celular associamos o nome de contato de um amigo, colega ou familiar com seu número e/ou e-mail para que não seja preciso memorizá-lo.
                 </p>
                 <p>
                     Então, o que acontece quando digitamos o domínio do Google é o navegador conferir no servidor DNS qual endereço está associado a ele.
                 </p>
-                <aside>É possível descobrir o seu próprio IP e de outros domínios através do IP Location. Note que o endereço IP de um domínio muda constantemente</aside>
+                <aside class="info-extra">
+                    <details>
+                        <summary>Extra:</summary>
+                        <p>É possível descobrir o seu próprio IP e de outros domínios através do <a href="https://www.iplocation.net/" target="_blank">IP Location</a>. Note que o endereço IP de um domínio muda constantemente</p>
+                    </details>
+                </aside>
 
                 <h4>TCP/IP</h4>
                 <p>
@@ -171,9 +176,9 @@
                     Isso é possível graças ao conjunto de protocolos da Web que citamos no começo do artigo: o TCP/IP (Protocolo de comunicação e transmissão/Protocolo Internet). Enquanto o IP se preocupa em trazer uma identificação individual com o endereçamento IP, o TCP possui o trabalho de definir a forma como uma informação vai sair de uma máquina para outra.
                 </p>
                 <p>
-                    O TCP faz com que pequenos pedaços de uma mesma informação sejam enviados sem uma ordem e rotas específicas e reorganizadas já no cliente, para que ela chegue da maneira mais eficiente possível. Esses fragmentos de dados são chamados de **pacotes** e, fazendo uma analogia simples, são muito semelhantes à uma correspondência com um remetente e destinatário, nesse caso, com informações como, por exemplo, porta de destino e porta de origem.
+                    O TCP faz com que pequenos pedaços de uma mesma informação sejam enviados sem uma ordem e rotas específicas e reorganizadas já no cliente, para que ela chegue da maneira mais eficiente possível. Esses fragmentos de dados são chamados de <ins>pacotes</ins> e, fazendo uma analogia simples, são muito semelhantes à uma correspondência com um remetente e destinatário, nesse caso, com informações como, por exemplo, porta de destino e porta de origem.
                 </p>
-                <img src="" alt="Protocolo de transmissão e comunicação">
+                <img src="img/article/tcp-ip.svg" alt="Protocolo de transmissão e comunicação" class="article-img">
                 <p>
                     Então, pós o navegador checar o endereço IP de um determinado domínio, por exemplo, do Google, o cliente faz um pedido para se conectar ao servidor e assim que essa conexão é realizada uma cópia dos dados passam a ser transferidos.
                 </p>
@@ -182,7 +187,7 @@
                 </p>
                 <ul>
                     <li>
-                        Conexão **ponto-a-ponto**, ou seja, a comunicação pode ser feita de ambos lados, tanto vindo comumente do cliente, como do servidor;
+                        Conexão ponto-a-ponto, ou seja, a comunicação pode ser feita de ambos lados, tanto vindo comumente do cliente, como do servidor;
                     </li>
                     <li>
                         Controle de fluxo para que haja uma gestão da quantidade de pacotes recebidos e enviados de acordo com a demanda;
@@ -199,13 +204,12 @@
                 <p>
                     O HTTP é um protocolo que trabalha em cima da arquitetura "cliente-servidor" em conjunto com o TCP/IP e serve como uma espécie de linguagem comum entre navegadores, ou seja, clientes, e servidores. Ele segue o modelo "request-response" que citamos há alguns instantes atrás.
                 </p>
-                <img src="" alt="Protocolo de Transferência de Hipertexto">
                 <p>
                     Retomando o exemplo que usamos durante todo o artigo, após termos uma conexão TCP estabelecida de forma plena, o que resta é que a página de fato chegue até o computador, e é aí que o HTTP entra. Veja isso a seguir com fluxo do HTTP resumido em alguns passos:
                 </p>
                 <ol>
                     <li>
-                        O usuário faz a busca por <span class="url">"www.google.com"</span>;
+                        O usuário faz a busca por <span>"www.google.com"</span>;
                     </li>
                     <li>
                         É consultado num servidor DNS o endereço IP do servidor em que a página está hospedada;
@@ -214,7 +218,7 @@
                         O navegador, então, gera uma requisição HTTP, ou seja, um pedido de acesso à página para o servidor;
                     </li>
                     <li>
-                        O servidor autoriza, consequentemente, pode autorizar ou não o acesso. Se autorizado, a resposta gerada trará o **HTML** da página, o principal arquivo que contém todo o conteúdo e dá o primeiro "sinal de vida" de um site.
+                        O servidor autoriza, consequentemente, pode autorizar ou não o acesso. Se autorizado, a resposta gerada trará o <strong>HTML</strong> da página, o principal arquivo que contém todo o conteúdo e dá o primeiro "sinal de vida" de um site.
                     </li>
                     <li>
                         Após, o navegador recebe os pacotes pelo TCP/IP, constrói a página e em fim, exibe sua página.
