@@ -40,13 +40,13 @@ a, abbr {
     text-decoration: none;
 }
 
-article a {
+main a {
     color: black;
     font-weight: bold;
     text-shadow: none;
 }
 
-article a:hover {
+main a:hover {
     text-decoration: underline;
 }
 

@@ -17,7 +17,7 @@
 
 /* Layout */
 
-.btn{
+.btn {
     display: inline-block;
     max-width: 220px;
     padding: 19px 50px;
@@ -32,6 +32,7 @@
 .btn:hover {
     transform: translateY(-10px);
     background: rgba(255, 255, 255, 0.459);
+    text-decoration: none;
 }
 
 .btn:active {

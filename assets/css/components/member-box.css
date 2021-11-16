@@ -49,6 +49,10 @@
     display: inline-block;
 }
 
+.social-media a, .social-media a:hover {
+    text-decoration: none;
+}
+
 .icon {
     width: 50px;
     margin-right: 25px;
