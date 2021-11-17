@@ -9,7 +9,10 @@ document.addEventListener('DOMContentLoaded', function(event) {
         var dataText = ["Segurança na nuvem"]
     } else if (document.title == "Ajuda") {
         var dataText = ["Ajuda"]
+    } else if (document.title == "Tipos de nuvens e serviços") {
+        var dataText = ["Tipos de nuvens e serviços"]
     }
+
 
     function typeWriter(text, i, fnCallback) {
         if (i < (text.length)) {
