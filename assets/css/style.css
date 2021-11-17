@@ -147,8 +147,7 @@
 }
 
 .background-main {
-    background-image: url(../assets/img/
-backgrounds/main.svg);
+    background-image: url(../img/backgrounds/main.svg);
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: 23vh;
