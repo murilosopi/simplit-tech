@@ -11,8 +11,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
         var dataText = ["Ajuda"]
     } else if (document.title == "Tipos de nuvens e serviços") {
         var dataText = ["Tipos de nuvens e serviços"]
+    } else if (document.title == "Provedores de Nuvens") {
+        var dataText = ["Provedores de Nuvens"]
     }
-
 
     function typeWriter(text, i, fnCallback) {
         if (i < (text.length)) {
