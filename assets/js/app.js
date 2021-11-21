@@ -13,7 +13,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
         var dataText = ["Tipos de nuvens e serviços"]
     } else if (document.title == "Provedores de Nuvens") {
         var dataText = ["Provedores de Nuvens"]
-    }
+    } else if (document.title == "Armazenamento em Nuvem") {
+        var dataText = ["Armazenamento em Nuvem"]
+    } 
 
     function typeWriter(text, i, fnCallback) {
         if (i < (text.length)) {
