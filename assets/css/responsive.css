@@ -134,6 +134,10 @@
         margin-right: auto;
         display: block;
     }
+
+    .article-img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 425px) { 
