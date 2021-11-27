@@ -68,3 +68,8 @@ article ul {
     margin-top: 10px;
     padding-left: 30px;
 }
+
+.no-bg {
+    background-color: transparent!important;
+    background-image: none!important;
+}
