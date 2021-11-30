@@ -58,7 +58,8 @@ address {
 }
 
 hr {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     height: 1px;
     border-style: solid;
     border-top: 0;

@@ -1,18 +1,28 @@
 .member-box {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     cursor: default;
     padding: 45px;
     margin-bottom: 65px;
     background-color: #EBEBEB;
     border-radius: 180px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    align-items: center;
-    box-shadow: -5px 5px 4px rgb(0, 0, 0, 25%);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: -5px 5px 4px rgb(0, 0, 0, 25%);
+            box-shadow: -5px 5px 4px rgb(0, 0, 0, 25%);
 }
 
 .right-flex .member-box {
-    flex-direction: row-reverse;
-    box-shadow: 5px 5px 4px rgb(0, 0, 0, 25%);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-shadow: 5px 5px 4px rgb(0, 0, 0, 25%);
+            box-shadow: 5px 5px 4px rgb(0, 0, 0, 25%);
     text-align: right;
 }
 
@@ -61,6 +71,8 @@
 .icon {
     width: 50px;
     margin-right: 25px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 
